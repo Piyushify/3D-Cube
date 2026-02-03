@@ -1,11 +1,14 @@
+:root {
+    --base: #2B2B2B;
+    --baseOp: #2B2B2B;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: 
-    black;
+    background-color: var(--base);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,34 +35,22 @@ header h1 span:nth-child(1) {
   color: red;
 }
 header h1 span:nth-child(2) {
-  color: yellow;
-}
-header h1 span:nth-child(3) {
   color: orange;
 }
-header h1 span:nth-child(4) {
+header h1 span:nth-child(3) {
   color: blue;
 }
-header h1 span:nth-child(5) {
+header h1 span:nth-child(4) {
   color: green;
 }
 header h1 span:nth-child(6) {
-  color: white;
+  color: yellow;
 }
 header h1 span:nth-child(7) {
   color: red;
 }
 header h1 span:nth-child(8) {
-  color: yellow;
-}
-header h1 span:nth-child(9) {
   color: orange;
-}
-header h1 span:nth-child(10) {
-  color: blue;
-}
-header h1 span:nth-child(11) {
-  color: green;
 }
 .scene {
     position: relative;
@@ -89,12 +80,12 @@ header h1 span:nth-child(11) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background: black;
+    background: var(--base);
     border-radius: 15%;
     backface-visibility: hidden;
 }
 .cube > div > div {
-    border: .05em solid black;
+    border: .05em solid var(--base);
     backface-visibility: hidden;
 }
 .front {
