@@ -1,6 +1,6 @@
 :root {
-    --base: #2B2B2B;
-    --baseOp: #2B2B2B;
+    --baseRev: #2B2B2B;
+    --base: #F6F6F6;
 }
 *{
     margin: 0;
@@ -29,28 +29,7 @@ header h1 {
   font-size: .85em;
   font-weight: bold;
   margin: auto;
-  
-}
-header h1 span:nth-child(1) {
-  color: red;
-}
-header h1 span:nth-child(2) {
-  color: orange;
-}
-header h1 span:nth-child(3) {
-  color: blue;
-}
-header h1 span:nth-child(4) {
-  color: green;
-}
-header h1 span:nth-child(6) {
-  color: yellow;
-}
-header h1 span:nth-child(7) {
-  color: red;
-}
-header h1 span:nth-child(8) {
-  color: orange;
+  color: var(--baseRev);
 }
 .scene {
     position: relative;
@@ -172,8 +151,8 @@ footer {
     position: fixed;
     bottom: 0;
     text-align: center;
-    font-size: .125em;
+    font-size: .175em;
     font-weight: bold;
     margin-bottom: 1em;
-    color: white;
+    color: var(--baseRev);
 }
